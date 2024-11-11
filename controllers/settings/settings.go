@@ -8,7 +8,7 @@ import (
 )
 
 func ShowSettings(c *gin.Context) {
-	db := util.DBOpenShop()
+	db := util.GetDB()
 	setting := models.ShowSettings{}
 	db.Where("id=?", 1).Find(&setting)
 	c.JSON(http.StatusOK, gin.H{

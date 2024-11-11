@@ -1,7 +1,6 @@
 package main
 
 import (
-	jwt "github.com/appleboy/gin-jwt/v2"
 	"github.com/cy77cc/hioshop/routes"
 	"log"
 	"net/http"
@@ -13,10 +12,7 @@ import (
 func main() {
 	engine := gin.Default()
 	// the jwt middleware
-	authMiddleware, err := jwt.New(middleware.InitParams())
-	if err != nil {
-		log.Fatal("JWT Error:" + err.Error())
-	}
+	authMiddleware := middleware.GetAuthMiddleware()
 
 	//register middleware
 	engine.Use(middleware.HandlerMiddleWare(authMiddleware), middleware.Cors())
@@ -30,6 +26,7 @@ func main() {
 	routes.RegisterSearchRoutes(v1)
 	routes.RegisterGoodsRoutes(v1)
 	routes.RegisterIndexRoutes(v1)
+	routes.RegisterCartGroup(v1)
 
 	// start http server
 	if err := http.ListenAndServe(":8080", engine); err != nil {

@@ -8,4 +8,5 @@ import (
 func RegisterCartGroup(router *gin.RouterGroup) {
 	cartGroup := router.Group("/cart")
 	cartGroup.GET("/goodsCount", cart.GetGoodsCount)
+
 }

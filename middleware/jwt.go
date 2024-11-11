@@ -20,6 +20,14 @@ type login struct {
 	Code string `json:"code" form:"code" binding:"required"`
 }
 
+func GetAuthMiddleware() *jwt.GinJWTMiddleware {
+	authMiddleware, err := jwt.New(InitParams())
+	if err != nil {
+		log.Fatal("JWT Error:" + err.Error())
+	}
+	return authMiddleware
+}
+
 type WX_code2Session struct {
 	Openid     string `json:"openid"`
 	SessionKey string `json:"session_key"`
@@ -52,8 +60,8 @@ func InitParams() *jwt.GinJWTMiddleware {
 	return &jwt.GinJWTMiddleware{
 		Realm:       "hioshop",
 		Key:         []byte("zdp483key"),
-		Timeout:     time.Hour * 24,
-		MaxRefresh:  time.Hour * 24,
+		Timeout:     time.Hour * 24 * 7,
+		MaxRefresh:  time.Hour * 24 * 7,
 		IdentityKey: configs.IdentityKey,
 		PayloadFunc: payloadFunc(),
 
@@ -74,10 +82,10 @@ func loginResponseFunc() func(c *gin.Context, code int, message string, expire t
 	return func(c *gin.Context, code int, message string, expire time.Time) {
 		claims := jwt.ExtractClaims(c)
 		openid, _ := claims[configs.IdentityKey].(string)
-		fmt.Println(openid)
-		db := util.DBOpenShop()
+
+		db := util.GetDB()
 		user := models.User{}
-		db.Table("hiolabs_user").Where("weixin_openid=?", openid).First(&user)
+		db.Where("weixin_openid=?", openid).First(&user)
 		c.JSON(code, gin.H{
 			"code":   code,
 			"errno":  0,
@@ -122,7 +130,6 @@ func authenticator() func(c *gin.Context) (interface{}, error) {
 		}
 		code := loginVals.Code
 
-		// TODO add get wx code method
 		client := resty.New()
 		wxRespone := WX_code2Session{}
 		get, err := client.R().
@@ -143,7 +150,7 @@ func authenticator() func(c *gin.Context) (interface{}, error) {
 		if wxRespone.Errcode != 0 {
 			return nil, errors.New(wxRespone.Errmsg)
 		}
-		db := util.DBOpenShop()
+		db := util.GetDB()
 		user := models.User{}
 		db.Table("hiolabs_user").Where("weixin_openid=?", wxRespone.Openid).First(&user)
 		if db.Error != nil || user.Id == 0 {
@@ -173,7 +180,7 @@ func authenticator() func(c *gin.Context) (interface{}, error) {
 func authorizator() func(data interface{}, c *gin.Context) bool {
 	return func(data interface{}, c *gin.Context) bool {
 		v, ok := data.(*models.User)
-		db := util.DBOpenShop()
+		db := util.GetDB()
 		user := models.User{}
 		db.Table("hiolabs_user").Where("weixin_openid=?", v.WeixinOpenid).First(&user)
 		if ok && user.Id != 0 {
@@ -204,7 +211,7 @@ func mainHandler(c *gin.Context) {
 	claims := jwt.ExtractClaims(c)
 	openid, _ := claims[configs.IdentityKey].(string)
 	fmt.Println(openid)
-	db := util.DBOpenShop()
+	db := util.GetDB()
 	user := models.User{}
 	db.Table("hiolabs_user").Where("weixin_openid=?", openid).First(&user)
 

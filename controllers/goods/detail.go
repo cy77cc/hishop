@@ -15,7 +15,7 @@ type Value struct {
 
 func Detail(c *gin.Context) {
 	goods_id, _ := strconv.Atoi(c.Query("id"))
-	db := util.DBOpenShop()
+	db := util.GetDB()
 	info := models.Goods{}
 	gallery := make([]models.GoodsGallery, 0)
 	product := make([]models.Product, 0)

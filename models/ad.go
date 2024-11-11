@@ -1,6 +1,6 @@
 package models
 
-type AdModel struct {
+type Ad struct {
 	Id        uint   `json:"id" gorm:"primary_key;auto_increment"`
 	LinkType  uint   `json:"link_type" gorm:"type:tinyint;default:0"`
 	Link      string `json:"link" gorm:"varchar(255);default:''"`

@@ -1,20 +1,13 @@
 package index
 
 import (
-	jwt "github.com/appleboy/gin-jwt/v2"
 	"github.com/cy77cc/hioshop/configs"
+	"github.com/cy77cc/hioshop/middleware"
 	"github.com/cy77cc/hioshop/models"
 	"github.com/cy77cc/hioshop/util"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
-
-type banner struct {
-	LinkType int    `json:"link_type"`
-	GoodsId  int    `json:"goods_id"`
-	ImageUrl string `json:"image_url"`
-	Link     string `json:"link"`
-}
 
 type categoryListItem struct {
 	Id        int            `json:"id"`
@@ -26,11 +19,11 @@ type categoryListItem struct {
 
 func AppInfo(c *gin.Context) {
 
-	db := util.DBOpenShop()
+	db := util.GetDB()
 	channels := make([]models.Category, 0)
 	db.Where("is_channel=? and parent_id=?", 1, 0).Order("sort_order").Find(&channels)
-	banners := make([]banner, 0)
-	db.Table("hiolabs_ad").Where("enabled=? and is_delete=?", 1, 0).Find(&banners)
+	banners := make([]models.Ad, 0)
+	db.Where("enabled=? and is_delete=?", 1, 0).Find(&banners)
 	notices := make([]models.Notice, 0)
 	db.Where("is_delete=?", 0).Find(&notices)
 
@@ -52,12 +45,13 @@ func AppInfo(c *gin.Context) {
 		categoryList[k].GoodsList = goods
 	}
 
-	claims := jwt.ExtractClaims(c)
-	openid, _ := claims[configs.IdentityKey].(string)
-
+	// 初始化一个jwt对象，解析token
+	auth := middleware.GetAuthMiddleware()
+	jwt, _ := auth.GetClaimsFromJWT(c)
+	openid := jwt[configs.IdentityKey]
 	var userId int
 	var cartCount int
-	db.Table("hiolabs_user").Where("open_id=?", openid).Select("id").Find(&userId)
+	db.Table("hiolabs_user").Where("weixin_openid=?", openid).Select("id").Find(&userId)
 	db.Table("hiolabs_cart").Where("user_id=?", userId).Group("user_id").Select("count(*)").Find(&cartCount)
 
 	data := make(map[string]interface{})
