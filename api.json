@@ -1,0 +1,1541 @@
+[
+    {
+        "address": "http://119.29.185.251:8360/api/settings/showSettings",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "id": 1,
+                "banner": 1,
+                "channel": 1,
+                "index_banner_img": 0,
+                "notice": 1
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/index/appInfo",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "channel": [
+                    {
+                        "id": 1005000,
+                        "icon_url": "http://yanxuan.nosdn.127.net/a45c2c262a476fea0b9fc684fed91ef5.png",
+                        "name": "居家",
+                        "sort_order": 1
+                    },
+                    {
+                        "id": 1005001,
+                        "icon_url": "http://yanxuan.nosdn.127.net/ad8b00d084cb7d0958998edb5fee9c0a.png",
+                        "name": "餐厨",
+                        "sort_order": 2
+                    },
+                    {
+                        "id": 1008000,
+                        "icon_url": "http://yanxuan.nosdn.127.net/11abb11c4cfdee59abfb6d16caca4c6a.png",
+                        "name": "配件",
+                        "sort_order": 3
+                    },
+                    {
+                        "id": 1012000,
+                        "icon_url": "http://yanxuan.nosdn.127.net/c2a3d6349e72c35931fe3b5bcd0966be.png",
+                        "name": "杂货",
+                        "sort_order": 4
+                    },
+                    {
+                        "id": 1019000,
+                        "icon_url": "http://yanxuan.nosdn.127.net/7093cfecb9dde1dd3eaf459623df4071.png",
+                        "name": "志趣",
+                        "sort_order": 5
+                    }
+                ],
+                "banner": [
+                    {
+                        "link_type": 0,
+                        "goods_id": 1109034,
+                        "image_url": "http://yanxuan.nosdn.127.net/0251bd141f5b55bd4311678750a6b344.jpg",
+                        "link": ""
+                    },
+                    {
+                        "link_type": 0,
+                        "goods_id": 1130039,
+                        "image_url": "http://yanxuan.nosdn.127.net/19b1375334f2e19130a3ba0e993d7e91.jpg",
+                        "link": ""
+                    },
+                    {
+                        "link_type": 0,
+                        "goods_id": 1109004,
+                        "image_url": "http://yanxuan.nosdn.127.net/ed50cbf7fab10b35f676e2451e112130.jpg",
+                        "link": ""
+                    },
+                    {
+                        "link_type": 0,
+                        "goods_id": 1064003,
+                        "image_url": "http://yanxuan.nosdn.127.net/b2de2ebcee090213861612909374f9f8.jpg",
+                        "link": ""
+                    }
+                ],
+                "notice": [
+                    {
+                        "content": "完全开源小程序商城 - github搜索：海风小店"
+                    },
+                    {
+                        "content": "可测试支付流程，但不发货不退款"
+                    },
+                    {
+                        "content": "如果可以，请在github点个star，谢谢"
+                    }
+                ],
+                "categoryList": [
+                    {
+                        "id": 1005000,
+                        "name": "居家",
+                        "banner": "http://nos.netease.com/yanxuan/f0d0e1a542e2095861b42bf789d948ce.jpg",
+                        "height": 155,
+                        "goodsList": [
+                            {
+                                "id": 1009024,
+                                "list_pic_url": "https://www.qile.club:8688/static/images/goods.jpg",
+                                "is_new": 0,
+                                "goods_number": 24,
+                                "name": "日式和风懒人沙发",
+                                "min_retail_price": "0.10"
+                            },
+                            {
+                                "id": 1086015,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/d5c2ecfe0fb00cdd8b829975bab21a31.png",
+                                "is_new": 0,
+                                "goods_number": 101,
+                                "name": "求打赏",
+                                "min_retail_price": "9.90"
+                            },
+                            {
+                                "id": 1116032,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/45176a783387751fc07a07f5031dd62c.png",
+                                "is_new": 0,
+                                "goods_number": 0,
+                                "name": "怀抱休闲椅组合",
+                                "min_retail_price": "3499.00"
+                            },
+                            {
+                                "id": 1127052,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/4f483526cfe3b953f403ae02049df5b9.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "纯棉水洗色织格夏凉被",
+                                "min_retail_price": "169.00"
+                            },
+                            {
+                                "id": 1181000,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/1f67b1970ee20fd572b7202da0ff705d.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "母亲节礼物-舒适安睡组合",
+                                "min_retail_price": "999.00"
+                            },
+                            {
+                                "id": 1110003,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/72dfb4bfc1cd1b834c064a9d1d40627d.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "全棉针织条纹四件套 新款",
+                                "min_retail_price": "299.00"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1005001,
+                        "name": "餐厨",
+                        "banner": "http://nos.netease.com/yanxuan/88855173a0cfcfd889ee6394a3259c4f.jpg",
+                        "height": 155,
+                        "goodsList": [
+                            {
+                                "id": 1064021,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/c83a3881704094ddd3970099ca77d115.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "清欢日式可调节台灯",
+                                "min_retail_price": "199.00"
+                            },
+                            {
+                                "id": 1097004,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/54f822e9c542d20566c7f70f90d52ae6.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "原素系列实木餐桌",
+                                "min_retail_price": "1699.00"
+                            },
+                            {
+                                "id": 1097005,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/e5fd0724a05387615738173fb8f1570d.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "原素系列实木餐椅（两把）",
+                                "min_retail_price": "1199.00"
+                            },
+                            {
+                                "id": 1097016,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/a7e6df722b82ad1b0158adcbdcf30df9.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "原素系列1.8米实木电视柜",
+                                "min_retail_price": "2799.00"
+                            },
+                            {
+                                "id": 1097009,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/e7b68189ef2f77a28110c3fc7ca5a697.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "原素系列实木书桌",
+                                "min_retail_price": "1599.00"
+                            },
+                            {
+                                "id": 1097007,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/b6e132180679b0673486145decc89aa3.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "原素系列立式实木圆桌",
+                                "min_retail_price": "759.00"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1008000,
+                        "name": "配件",
+                        "banner": "http://nos.netease.com/yanxuan/935f1ab7dcfeb4bbd4a5da9935161aaf.jpg",
+                        "height": 155,
+                        "goodsList": [
+                            {
+                                "id": 1083009,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/76e5c820f6bb71a26517ffa01f499871.png",
+                                "is_new": 0,
+                                "goods_number": 1000,
+                                "name": "海洋之心永生花",
+                                "min_retail_price": "90.00"
+                            },
+                            {
+                                "id": 1065004,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/05977cf923857db0c44b405bd87b096b.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "悦己日式木质落地镜",
+                                "min_retail_price": "199.00"
+                            },
+                            {
+                                "id": 1093000,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/1a22cc488390b616e75afbbd94db6584.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "月光曲·小木棉",
+                                "min_retail_price": "39.00"
+                            },
+                            {
+                                "id": 1109034,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/0251bd141f5b55bd4311678750a6b344.jpg",
+                                "is_new": 0,
+                                "goods_number": 99,
+                                "name": "LCD电子钟",
+                                "min_retail_price": "0.50"
+                            },
+                            {
+                                "id": 1109004,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/d25b5990f16c6d1ac168a34b7aeca681.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "简日挂钟",
+                                "min_retail_price": "89.00"
+                            },
+                            {
+                                "id": 1125016,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/46f3059b020eb3900e9af8e8c1af8a97.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "大丰收收纳摆件",
+                                "min_retail_price": "139.00"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1012000,
+                        "name": "杂货",
+                        "banner": "http://nos.netease.com/yanxuan/a0c91ae573079830743dec6ee08f5841.jpg",
+                        "height": 155,
+                        "goodsList": [
+                            {
+                                "id": 1135052,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/63f5da1f5363af43aa91864bf66af48e.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "日式简约素色窗帘",
+                                "min_retail_price": "259.00"
+                            },
+                            {
+                                "id": 1135051,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/9126151f028a8804026d530836b481cb.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "日式素雅纯色流星纹窗帘",
+                                "min_retail_price": "299.00"
+                            },
+                            {
+                                "id": 1135056,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/536246ca4adb77274a94b18bb2f91f47.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "糖果色凹凸条纹儿童房窗帘",
+                                "min_retail_price": "259.00"
+                            },
+                            {
+                                "id": 1135055,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/87b6a608b99279ebf1764682e9e5fcec.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "北欧印象几何条纹混色窗帘",
+                                "min_retail_price": "399.00"
+                            },
+                            {
+                                "id": 1135053,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/1f9e34b1aadd14ea0c9c299c530d86ba.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "法式复古山形纹提花窗帘",
+                                "min_retail_price": "429.00"
+                            },
+                            {
+                                "id": 1135054,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/30d7daa0824fbb61b6c36175c8203349.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "美式田园风蜻蜓提花窗帘",
+                                "min_retail_price": "559.00"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 1019000,
+                        "name": "志趣",
+                        "banner": "http://nos.netease.com/yanxuan/72de912b6350b33ecf88a27498840e62.jpg",
+                        "height": 155,
+                        "goodsList": [
+                            {
+                                "id": 1135050,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/366f3f3f0e8971c8cf871e2b55b74ff2.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "多功能封闭式环保除菌猫砂盆",
+                                "min_retail_price": "179.00"
+                            },
+                            {
+                                "id": 1130039,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/03c73e1f1ce1d2365e83b3230e507030.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "房型封闭式凉感条纹宠物窝",
+                                "min_retail_price": "89.00"
+                            },
+                            {
+                                "id": 1064003,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/58ed94b63b39339e7814f1339013793c.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "六边形南瓜式宠物窝",
+                                "min_retail_price": "89.00"
+                            },
+                            {
+                                "id": 1064000,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/ebe118f94ddafe82c4a8cd51da6ff183.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "清新条纹开放式宠物窝",
+                                "min_retail_price": "79.00"
+                            },
+                            {
+                                "id": 1064002,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/48dbfe207b2203ef45055dcc9cedbe60.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "秋冬加厚条纹宠物窝",
+                                "min_retail_price": "69.00"
+                            },
+                            {
+                                "id": 1064004,
+                                "list_pic_url": "http://yanxuan.nosdn.127.net/337da7094c1df295ca0f0b8baa55b2d5.png",
+                                "is_new": 0,
+                                "goods_number": 100,
+                                "name": "方形封闭式宠物窝",
+                                "min_retail_price": "99.00"
+                            }
+                        ]
+                    }
+                ],
+                "cartCount": 0
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/auth/loginByWeixin",
+        "method": "post",
+        "payload": {
+            "code": "0b1jp5000A3o8T15kk100SRC280jp50Z"
+        },
+        "response": {
+            "code": "0b1jp5000A3o8T15kk100SRC280jp50Z"
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/goods/detail?id=1109034",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "info": {
+                    "id": 1109034,
+                    "category_id": 1008000,
+                    "is_on_sale": 1,
+                    "name": "LCD电子钟",
+                    "goods_number": 99,
+                    "sell_volume": 278,
+                    "keywords": "",
+                    "retail_price": "0.5",
+                    "min_retail_price": "0.50",
+                    "cost_price": "111",
+                    "min_cost_price": "111.00",
+                    "goods_brief": "此商品可以测试分享到朋友圈",
+                    "goods_desc": "<p><img src=\"http://yanxuan.nosdn.127.net/916068b542d339d851afa9ed21cbb615.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/1772c676b8a0151a3277415147e91aea.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a2654631d02db94d1b16f35c3386e295.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/fe4364bc9c185394f155ef30a9fe7a20.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/2c75be07a87009da083944b52a283bf3.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/f19e7292288a347d0fa0590e22069946.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/39f509f66ae98d0aca642af803abdf04.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/8d540abac2bef015ac85083e377bbcd7.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c7468d589f382664c61275bebfaf9177.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/885bb0148c6104578cd7ee31813dab44.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a4ec0f7b8cabadbaca834957b65fd5ec.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/fb2cf783f23f6945e961979a5cb2af27.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/62c6c3025ce0a80b9cb0a214595a5a99.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/7be5447b74b0afd0cd3943adbf559cb9.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/840c818a1206e5ae2a01a1e8800e4b4b.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/fb8b9a45109a23285415fade5a798e27.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c00c0a1b4af1503a90ef691999fdf4d9.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/be93945860e951158237bbf4a1c86b96.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/bc0d8c9697cbf9303954b77761ff4a0f.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/8abfd0b6ea2dd3106ea8678793279d6f.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/abd55ff4c1325917cca7123dfaaccf2c.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/ec2c42f5a7c6c2efefb16db80cf761b2.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/5f394d926f4acfbd70b6ad3d733cc3e5.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/01a4b743fe1395c9797c5922dd1f3a8a.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/22115c51b22dcf614054887e6662ddd3.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/8fc720dc92ab05aaef2b055e5e3d27c8.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/adb14137997b1a886a39e98a043ec511.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e53b80ee6104b5cea8edbff8bbe5547c.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/92e56e6bc6f548fae669831b38bfbc6f.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/20b74a363cdb9b31e0141869fd285dbe.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/031d65d8ebee352f28f614cc07935606.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a31a92d72ea93692a5cfbcaa7a02ced4.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/b897a81ca59bc7dd3aae8fe314254538.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/77d0fbc4678a56713ae675a9884e4158.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/da8a7b7237f083a6561c9ffc8a97b466.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/2724952293dfb4ab737640fab4b229d9.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/e10bbb914bf44916e86b446e4c563d85.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/c64c103d15388c0eda01086b8b977fe5.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/8d21b85379acabe83c692c5ebf625578.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/2f5c0d32e5ef81288dc44d08d183770b.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/24dedb497122ca1a4b5bcdf10f4b9a85.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/02ece671c8dbca5f5436ff9f2eaf1b81.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/348adaa1d5bfe5b12296bb28e55e7017.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/d22886559be279a0adbe787b5aae9dd0.jpg\"></p>",
+                    "sort_order": 10,
+                    "is_index": 1,
+                    "is_new": 0,
+                    "goods_unit": "件",
+                    "https_pic_url": "http://yanxuan.nosdn.127.net/0251bd141f5b55bd4311678750a6b344.jpg",
+                    "list_pic_url": "http://yanxuan.nosdn.127.net/0251bd141f5b55bd4311678750a6b344.jpg",
+                    "freight_template_id": 17,
+                    "freight_type": 0,
+                    "is_delete": 0,
+                    "has_gallery": 1,
+                    "has_done": 1
+                },
+                "gallery": [
+                    {
+                        "id": 425,
+                        "goods_id": 1109034,
+                        "img_url": "http://yanxuan.nosdn.127.net/0251bd141f5b55bd4311678750a6b344.jpg",
+                        "img_desc": "",
+                        "sort_order": 5,
+                        "is_delete": 0
+                    },
+                    {
+                        "id": 426,
+                        "goods_id": 1109034,
+                        "img_url": "http://yanxuan.nosdn.127.net/59c2d5822cda19f8caa2d9034937f565.jpg",
+                        "img_desc": "",
+                        "sort_order": 5,
+                        "is_delete": 0
+                    },
+                    {
+                        "id": 427,
+                        "goods_id": 1109034,
+                        "img_url": "http://yanxuan.nosdn.127.net/3d089c7c2a04ee17767a283a9f115dd0.jpg",
+                        "img_desc": "",
+                        "sort_order": 5,
+                        "is_delete": 0
+                    },
+                    {
+                        "id": 428,
+                        "goods_id": 1109034,
+                        "img_url": "http://yanxuan.nosdn.127.net/0421111cdef15b0c9777da80eb66f696.jpg",
+                        "img_desc": "",
+                        "sort_order": 5,
+                        "is_delete": 0
+                    }
+                ],
+                "specificationList": {
+                    "specification_id": 1,
+                    "name": "规格",
+                    "valueList": [
+                        {
+                            "id": 64,
+                            "goods_id": 1109034,
+                            "specification_id": 1,
+                            "value": " 升级版",
+                            "pic_url": "",
+                            "is_delete": 0,
+                            "goods_number": 99
+                        }
+                    ]
+                },
+                "productList": [
+                    {
+                        "id": 141,
+                        "goods_id": 1109034,
+                        "goods_specification_ids": "64",
+                        "goods_sn": "1109034",
+                        "goods_number": 99,
+                        "retail_price": "0.50",
+                        "cost": "111.00",
+                        "goods_weight": 1,
+                        "has_change": 0,
+                        "goods_name": "LCD电子钟",
+                        "is_on_sale": 1,
+                        "is_delete": 0
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/cart/goodsCount",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "cartTotal": {
+                    "goodsCount": 0
+                }
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/search/index",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "defaultKeyword": {},
+                "historyKeywordList": [
+                    "哈哈"
+                ],
+                "hotKeywordList": []
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/goods/list?keyword=%E5%93%88%E5%93%88&sort=default&order=desc&sales=desc",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": []
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/catalog/currentlist",
+        "method": "post",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "count": 14,
+                "totalPages": 2,
+                "pageSize": 8,
+                "currentPage": 1,
+                "data": [
+                    {
+                        "name": "日式和风懒人沙发",
+                        "id": 1009024,
+                        "goods_brief": "此商品可以测试分享到朋友圈",
+                        "min_retail_price": "0.10",
+                        "list_pic_url": "https://www.qile.club:8688/static/images/goods.jpg",
+                        "goods_number": 24
+                    },
+                    {
+                        "name": "求打赏",
+                        "id": 1086015,
+                        "goods_brief": "开源不易，请打赏",
+                        "min_retail_price": "9.90",
+                        "list_pic_url": "http://yanxuan.nosdn.127.net/d5c2ecfe0fb00cdd8b829975bab21a31.png",
+                        "goods_number": 101
+                    },
+                    {
+                        "name": "怀抱休闲椅组合",
+                        "id": 1116032,
+                        "goods_brief": "敦厚包裹感 葛优躺神器",
+                        "min_retail_price": "3499.00",
+                        "list_pic_url": "http://yanxuan.nosdn.127.net/45176a783387751fc07a07f5031dd62c.png",
+                        "goods_number": 0
+                    },
+                    {
+                        "name": "纯棉水洗色织格夏凉被",
+                        "id": 1127052,
+                        "goods_brief": "100%棉填充，透气排汗，双面可用",
+                        "min_retail_price": "169.00",
+                        "list_pic_url": "http://yanxuan.nosdn.127.net/4f483526cfe3b953f403ae02049df5b9.png",
+                        "goods_number": 100
+                    },
+                    {
+                        "name": "母亲节礼物-舒适安睡组合",
+                        "id": 1181000,
+                        "goods_brief": "安心舒适是最好的礼物",
+                        "min_retail_price": "999.00",
+                        "list_pic_url": "http://yanxuan.nosdn.127.net/1f67b1970ee20fd572b7202da0ff705d.png",
+                        "goods_number": 100
+                    },
+                    {
+                        "name": "可水洗舒柔丝羽绒枕",
+                        "id": 1009012,
+                        "goods_brief": "超细纤维，蓬松轻盈回弹",
+                        "min_retail_price": "59.00",
+                        "list_pic_url": "http://yanxuan.nosdn.127.net/a196b367f23ccfd8205b6da647c62b84.png",
+                        "goods_number": 100
+                    },
+                    {
+                        "name": "色织精梳AB纱格纹空调被",
+                        "id": 1011004,
+                        "goods_brief": "加大加厚，双色精彩",
+                        "min_retail_price": "199.00",
+                        "list_pic_url": "http://yanxuan.nosdn.127.net/0984c9388a2c3fd2335779da904be393.png",
+                        "goods_number": 100
+                    },
+                    {
+                        "name": "清欢日式可调节落地灯",
+                        "id": 1064022,
+                        "goods_brief": "便易调节，风格百搭",
+                        "min_retail_price": "299.00",
+                        "list_pic_url": "http://yanxuan.nosdn.127.net/a9c155e26d09e3c92b623f0472ed674a.png",
+                        "goods_number": 100
+                    }
+                ]
+            }
+        },
+        "payload": {
+            "size": 8,
+            "page": 1,
+            "id": 1005000
+        },
+        "id_list": [
+            0,
+            1005000,
+            1005001
+        ]
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/catalog/current?id=1005000",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "id": 1005000,
+                "name": "居家",
+                "img_url": "http://nos.netease.com/yanxuan/f0d0e1a542e2095861b42bf789d948ce.jpg",
+                "p_height": 155
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/goods/count",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "goodsCount": 48
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/goods/detail?id=1064021",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "info": {
+                    "id": 1064021,
+                    "category_id": 1005001,
+                    "is_on_sale": 1,
+                    "name": "清欢日式可调节台灯",
+                    "goods_number": 100,
+                    "sell_volume": 0,
+                    "keywords": "",
+                    "retail_price": "199",
+                    "min_retail_price": "199.00",
+                    "cost_price": "100",
+                    "min_cost_price": "100.00",
+                    "goods_brief": "木铁结合，全体可调节",
+                    "goods_desc": "<p><img src=\"http://yanxuan.nosdn.127.net/15e1d839714a67bff57259d61d7ca2e5.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/43ba9bbc931f954e0aaeb90631a179ac.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/ac5ca160c90c1a700160d5d024ad611b.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/0f2d157d83955d5c616dc3d647da6f66.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/a2ee5af100a5432f0614e9717196787e.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/91fb28c19d495e47797ef250940ab618.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/6f37742eed13ea12d8c341e1e3b988e9.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/5ff15b419a0248b7b53bd60286067766.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/21c4dacdc844da911e43eaac0975908a.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/3f8741dd387c51378f78bdbf65856a41.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/dbe9726936999c62ac8bce3b620cd045.jpg\"></p><p><img src=\"http://yanxuan.nosdn.127.net/d12ad2de3cb646e76380c064ccfe038f.jpg\"></p>",
+                    "sort_order": 3,
+                    "is_index": 1,
+                    "is_new": 0,
+                    "goods_unit": "件",
+                    "https_pic_url": "http://yanxuan.nosdn.127.net/0804833605816d03e57705a77f1b8aed.jpg",
+                    "list_pic_url": "http://yanxuan.nosdn.127.net/c83a3881704094ddd3970099ca77d115.png",
+                    "freight_template_id": 17,
+                    "freight_type": 0,
+                    "is_delete": 0,
+                    "has_gallery": 1,
+                    "has_done": 1
+                },
+                "gallery": [
+                    {
+                        "id": 213,
+                        "goods_id": 1064021,
+                        "img_url": "http://yanxuan.nosdn.127.net/fbe15281f89334032ab69e4e6751da64.jpg",
+                        "img_desc": "",
+                        "sort_order": 5,
+                        "is_delete": 0
+                    },
+                    {
+                        "id": 214,
+                        "goods_id": 1064021,
+                        "img_url": "http://yanxuan.nosdn.127.net/997b3ceebb607dde42a17e320a830495.jpg",
+                        "img_desc": "",
+                        "sort_order": 5,
+                        "is_delete": 0
+                    },
+                    {
+                        "id": 215,
+                        "goods_id": 1064021,
+                        "img_url": "http://yanxuan.nosdn.127.net/4b8d97703408cac441e0e0f47f8494da.jpg",
+                        "img_desc": "",
+                        "sort_order": 5,
+                        "is_delete": 0
+                    },
+                    {
+                        "id": 216,
+                        "goods_id": 1064021,
+                        "img_url": "http://yanxuan.nosdn.127.net/b827d1d35e69f6e96e8b99889d322f57.jpg",
+                        "img_desc": "",
+                        "sort_order": 5,
+                        "is_delete": 0
+                    }
+                ],
+                "specificationList": {
+                    "specification_id": 1,
+                    "name": "规格",
+                    "valueList": [
+                        {
+                            "id": 55,
+                            "goods_id": 1064021,
+                            "specification_id": 1,
+                            "value": "白色",
+                            "pic_url": "",
+                            "is_delete": 0,
+                            "goods_number": 100
+                        }
+                    ]
+                },
+                "productList": [
+                    {
+                        "id": 78,
+                        "goods_id": 1064021,
+                        "goods_specification_ids": "55",
+                        "goods_sn": "1064021",
+                        "goods_number": 100,
+                        "retail_price": "199.00",
+                        "cost": "100.00",
+                        "goods_weight": 1,
+                        "has_change": 0,
+                        "goods_name": "清欢日式可调节台灯",
+                        "is_on_sale": 1,
+                        "is_delete": 0
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/cart/goodsCount",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "cartTotal": {
+                    "goodsCount": 0
+                }
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/catalog/index",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "categoryList": [
+                    {
+                        "id": 1005000,
+                        "name": "居家",
+                        "keywords": "",
+                        "front_desc": "回家，放松身心",
+                        "parent_id": 0,
+                        "sort_order": 1,
+                        "show_index": 1,
+                        "is_show": 1,
+                        "icon_url": "http://yanxuan.nosdn.127.net/a45c2c262a476fea0b9fc684fed91ef5.png",
+                        "img_url": "http://nos.netease.com/yanxuan/f0d0e1a542e2095861b42bf789d948ce.jpg",
+                        "level": "L1",
+                        "front_name": "回家，放松身心",
+                        "p_height": 155,
+                        "is_category": 1,
+                        "is_channel": 1
+                    },
+                    {
+                        "id": 1005001,
+                        "name": "餐厨",
+                        "keywords": "",
+                        "front_desc": "厨房",
+                        "parent_id": 0,
+                        "sort_order": 2,
+                        "show_index": 2,
+                        "is_show": 1,
+                        "icon_url": "http://yanxuan.nosdn.127.net/ad8b00d084cb7d0958998edb5fee9c0a.png",
+                        "img_url": "http://nos.netease.com/yanxuan/88855173a0cfcfd889ee6394a3259c4f.jpg",
+                        "level": "L1",
+                        "front_name": "爱，囿于厨房",
+                        "p_height": 155,
+                        "is_category": 1,
+                        "is_channel": 1
+                    },
+                    {
+                        "id": 1008000,
+                        "name": "配件",
+                        "keywords": "",
+                        "front_desc": "配角，亦是主角",
+                        "parent_id": 0,
+                        "sort_order": 3,
+                        "show_index": 3,
+                        "is_show": 1,
+                        "icon_url": "http://yanxuan.nosdn.127.net/11abb11c4cfdee59abfb6d16caca4c6a.png",
+                        "img_url": "http://nos.netease.com/yanxuan/935f1ab7dcfeb4bbd4a5da9935161aaf.jpg",
+                        "level": "L1",
+                        "front_name": "配角，亦是主角",
+                        "p_height": 155,
+                        "is_category": 1,
+                        "is_channel": 1
+                    },
+                    {
+                        "id": 1012000,
+                        "name": "杂货",
+                        "keywords": "",
+                        "front_desc": "解忧，每个烦恼",
+                        "parent_id": 0,
+                        "sort_order": 4,
+                        "show_index": 7,
+                        "is_show": 1,
+                        "icon_url": "http://yanxuan.nosdn.127.net/c2a3d6349e72c35931fe3b5bcd0966be.png",
+                        "img_url": "http://nos.netease.com/yanxuan/a0c91ae573079830743dec6ee08f5841.jpg",
+                        "level": "L1",
+                        "front_name": "解忧，每个烦恼",
+                        "p_height": 155,
+                        "is_category": 1,
+                        "is_channel": 1
+                    },
+                    {
+                        "id": 1019000,
+                        "name": "志趣",
+                        "keywords": "",
+                        "front_desc": "爱好，点缀生活",
+                        "parent_id": 0,
+                        "sort_order": 5,
+                        "show_index": 9,
+                        "is_show": 1,
+                        "icon_url": "http://yanxuan.nosdn.127.net/7093cfecb9dde1dd3eaf459623df4071.png",
+                        "img_url": "http://nos.netease.com/yanxuan/72de912b6350b33ecf88a27498840e62.jpg",
+                        "level": "L1",
+                        "front_name": "周边精品，共享热爱",
+                        "p_height": 155,
+                        "is_category": 1,
+                        "is_channel": 1
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/cart/index",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "cartList": [
+                    {
+                        "id": 22128,
+                        "user_id": 5590,
+                        "goods_id": 1009024,
+                        "goods_sn": "1234",
+                        "product_id": 251,
+                        "goods_name": "日式和风懒人沙发",
+                        "goods_aka": "懒人椅",
+                        "goods_weight": 2,
+                        "add_price": "0.20",
+                        "retail_price": "0.20",
+                        "number": 2,
+                        "goods_specifition_name_value": "蓝色",
+                        "goods_specifition_ids": "77",
+                        "checked": 0,
+                        "list_pic_url": "https://www.qile.club:8688/static/images/goods.jpg",
+                        "freight_template_id": 17,
+                        "is_on_sale": 1,
+                        "add_time": 1730821544,
+                        "is_fast": 0,
+                        "is_delete": 0,
+                        "weight_count": 4
+                    }
+                ],
+                "cartTotal": {
+                    "goodsCount": 2,
+                    "goodsAmount": "0.40",
+                    "checkedGoodsCount": 0,
+                    "checkedGoodsAmount": "0.00",
+                    "user_id": 5590,
+                    "numberChange": 0
+                }
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/cart/goodsCount",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "cartTotal": {
+                    "goodsCount": 0
+                }
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/order/orderCount",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "toPay": 0,
+                "toDelivery": 0,
+                "toReceive": 0
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/auth/loginByWeixin",
+        "method": "post",
+        "payload": {
+            "code": "0a1m5X000WE58T1Z0M200RqYXu3m5X0b"
+        },
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uX2tleSI6InZUNUVraWZvbDJQaEtTWnQwTjhYSmc9PSIsIm9wZW5pZCI6Im9aci0tNGkxQzBCNkcwM2Zaam9kTk9nM3o1WGsiLCJ1c2VyX2lkIjo1NTkwLCJpYXQiOjE3MzA4MjA5MTl9.eMXGb70MFBSROOEPEXu1K7Ctm3_LB1HqB7XqScr82Iw",
+                "userInfo": {
+                    "id": 5590,
+                    "username": "微信用户1929eef3-6477-49fd-967e-1b6d518b15db",
+                    "nickname": "微信用户",
+                    "avatar": "/static/images/default_avatar.png"
+                },
+                "is_new": 1
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/order/list?showType=0&size=8&page=1",
+        "method": "get",
+        "response": {"errno":0,"errmsg":"","data":{"cartList":[{"id":22128,"user_id":5590,"goods_id":1009024,"goods_sn":"1234","product_id":251,"goods_name":"日式和风懒人沙发","goods_aka":"懒人椅","goods_weight":2,"add_price":"0.20","retail_price":"0.20","number":2,"goods_specifition_name_value":"蓝色","goods_specifition_ids":"77","checked":0,"list_pic_url":"https://www.qile.club:8688/static/images/goods.jpg","freight_template_id":17,"is_on_sale":1,"add_time":1730821544,"is_fast":0,"is_delete":0,"weight_count":4}],"cartTotal":{"goodsCount":2,"goodsAmount":"0.40","checkedGoodsCount":0,"checkedGoodsAmount":"0.00","user_id":5590,"numberChange":0}}}
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/settings/userDetail",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "id": 5590,
+                "mobile": "",
+                "name": "",
+                "nickname": "微信用户",
+                "avatar": "/static/images/default_avatar.png"
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/address/getAddresses",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": []
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/region/list?parentId=1",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": [
+                {
+                    "id": 2,
+                    "parent_id": 1,
+                    "name": "北京市",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 4,
+                    "area_code": "HB",
+                    "far_area": 0
+                },
+                {
+                    "id": 3,
+                    "parent_id": 1,
+                    "name": "天津市",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 4,
+                    "area_code": "HB",
+                    "far_area": 0
+                },
+                {
+                    "id": 4,
+                    "parent_id": 1,
+                    "name": "河北省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 4,
+                    "area_code": "HB",
+                    "far_area": 0
+                },
+                {
+                    "id": 5,
+                    "parent_id": 1,
+                    "name": "山西省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 4,
+                    "area_code": "HB",
+                    "far_area": 0
+                },
+                {
+                    "id": 6,
+                    "parent_id": 1,
+                    "name": "内蒙古自治区",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 4,
+                    "area_code": "HB",
+                    "far_area": 1
+                },
+                {
+                    "id": 7,
+                    "parent_id": 1,
+                    "name": "辽宁省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 6,
+                    "area_code": "DB",
+                    "far_area": 0
+                },
+                {
+                    "id": 8,
+                    "parent_id": 1,
+                    "name": "吉林省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 6,
+                    "area_code": "DB",
+                    "far_area": 0
+                },
+                {
+                    "id": 9,
+                    "parent_id": 1,
+                    "name": "黑龙江省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 6,
+                    "area_code": "DB",
+                    "far_area": 0
+                },
+                {
+                    "id": 10,
+                    "parent_id": 1,
+                    "name": "上海市",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 1,
+                    "area_code": "HD",
+                    "far_area": 0
+                },
+                {
+                    "id": 11,
+                    "parent_id": 1,
+                    "name": "江苏省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 1,
+                    "area_code": "HD",
+                    "far_area": 0
+                },
+                {
+                    "id": 12,
+                    "parent_id": 1,
+                    "name": "浙江省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 1,
+                    "area_code": "HD",
+                    "far_area": 0
+                },
+                {
+                    "id": 13,
+                    "parent_id": 1,
+                    "name": "安徽省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 1,
+                    "area_code": "HD",
+                    "far_area": 0
+                },
+                {
+                    "id": 14,
+                    "parent_id": 1,
+                    "name": "福建省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 2,
+                    "area_code": "HN",
+                    "far_area": 0
+                },
+                {
+                    "id": 15,
+                    "parent_id": 1,
+                    "name": "江西省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 1,
+                    "area_code": "HD",
+                    "far_area": 0
+                },
+                {
+                    "id": 16,
+                    "parent_id": 1,
+                    "name": "山东省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 4,
+                    "area_code": "HB",
+                    "far_area": 0
+                },
+                {
+                    "id": 17,
+                    "parent_id": 1,
+                    "name": "河南省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 3,
+                    "area_code": "HZ",
+                    "far_area": 0
+                },
+                {
+                    "id": 18,
+                    "parent_id": 1,
+                    "name": "湖北省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 3,
+                    "area_code": "HZ",
+                    "far_area": 0
+                },
+                {
+                    "id": 19,
+                    "parent_id": 1,
+                    "name": "湖南省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 3,
+                    "area_code": "HZ",
+                    "far_area": 0
+                },
+                {
+                    "id": 20,
+                    "parent_id": 1,
+                    "name": "广东省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 2,
+                    "area_code": "HN",
+                    "far_area": 0
+                },
+                {
+                    "id": 21,
+                    "parent_id": 1,
+                    "name": "广西壮族自治区",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 2,
+                    "area_code": "HN",
+                    "far_area": 0
+                },
+                {
+                    "id": 22,
+                    "parent_id": 1,
+                    "name": "海南省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 2,
+                    "area_code": "HN",
+                    "far_area": 1
+                },
+                {
+                    "id": 23,
+                    "parent_id": 1,
+                    "name": "重庆市",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 5,
+                    "area_code": "XN",
+                    "far_area": 0
+                },
+                {
+                    "id": 24,
+                    "parent_id": 1,
+                    "name": "四川省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 5,
+                    "area_code": "XN",
+                    "far_area": 0
+                },
+                {
+                    "id": 25,
+                    "parent_id": 1,
+                    "name": "贵州省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 5,
+                    "area_code": "XN",
+                    "far_area": 0
+                },
+                {
+                    "id": 26,
+                    "parent_id": 1,
+                    "name": "云南省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 5,
+                    "area_code": "XN",
+                    "far_area": 0
+                },
+                {
+                    "id": 27,
+                    "parent_id": 1,
+                    "name": "西藏自治区",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 5,
+                    "area_code": "XN",
+                    "far_area": 1
+                },
+                {
+                    "id": 28,
+                    "parent_id": 1,
+                    "name": "陕西省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 7,
+                    "area_code": "XB",
+                    "far_area": 0
+                },
+                {
+                    "id": 29,
+                    "parent_id": 1,
+                    "name": "甘肃省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 7,
+                    "area_code": "XB",
+                    "far_area": 1
+                },
+                {
+                    "id": 30,
+                    "parent_id": 1,
+                    "name": "青海省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 7,
+                    "area_code": "XB",
+                    "far_area": 1
+                },
+                {
+                    "id": 31,
+                    "parent_id": 1,
+                    "name": "宁夏回族自治区",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 7,
+                    "area_code": "XB",
+                    "far_area": 1
+                },
+                {
+                    "id": 32,
+                    "parent_id": 1,
+                    "name": "新疆维吾尔自治区",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 7,
+                    "area_code": "XB",
+                    "far_area": 1
+                },
+                {
+                    "id": 33,
+                    "parent_id": 1,
+                    "name": "台湾省",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 8,
+                    "area_code": "GAT",
+                    "far_area": 1
+                },
+                {
+                    "id": 34,
+                    "parent_id": 1,
+                    "name": "香港特别行政区",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 8,
+                    "area_code": "GAT",
+                    "far_area": 1
+                },
+                {
+                    "id": 35,
+                    "parent_id": 1,
+                    "name": "澳门特别行政区",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 8,
+                    "area_code": "GAT",
+                    "far_area": 1
+                },
+                {
+                    "id": 36,
+                    "parent_id": 1,
+                    "name": "海外",
+                    "type": 1,
+                    "agency_id": 0,
+                    "area": 9,
+                    "area_code": "HW",
+                    "far_area": 0
+                }
+            ]
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/address/saveAddress",
+        "method": "post",
+        "payload": {
+            "name": "张三",
+            "mobile": "13097171122",
+            "province_id": 3,
+            "city_id": 38,
+            "district_id": 422,
+            "address": "行行行",
+            "is_default": 1
+        },
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "id": 2183,
+                "name": "张三",
+                "user_id": 5590,
+                "country_id": 0,
+                "province_id": 3,
+                "city_id": 38,
+                "district_id": 422,
+                "address": "行行行",
+                "mobile": "13097171122",
+                "is_default": 1,
+                "is_delete": 0
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/address/getAddresses",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": [
+                {
+                    "id": 2183,
+                    "name": "张三",
+                    "user_id": 5590,
+                    "country_id": 0,
+                    "province_id": 3,
+                    "city_id": 38,
+                    "district_id": 422,
+                    "address": "行行行",
+                    "mobile": "13097171122",
+                    "is_default": 1,
+                    "is_delete": 0,
+                    "province_name": "天津市",
+                    "city_name": "天津市",
+                    "district_name": "和平区",
+                    "full_region": "天津市天津市和平区"
+                }
+            ]
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/footprint/list?page=1&size=8",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "count": 0,
+                "totalPages": 0,
+                "pageSize": 8,
+                "currentPage": 1,
+                "data": []
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/cart/add",
+        "method": "post",
+        "payload": {
+            "addType": 0,
+            "goodsId": "1009024",
+            "number": 2,
+            "productId": 251
+        },
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "cartList": [
+                    {
+                        "id": 22128,
+                        "user_id": 5590,
+                        "goods_id": 1009024,
+                        "goods_sn": "1234",
+                        "product_id": 251,
+                        "goods_name": "日式和风懒人沙发",
+                        "goods_aka": "懒人椅",
+                        "goods_weight": 2,
+                        "add_price": "0.20",
+                        "retail_price": "0.20",
+                        "number": 2,
+                        "goods_specifition_name_value": "蓝色",
+                        "goods_specifition_ids": "77",
+                        "checked": 1,
+                        "list_pic_url": "https://www.qile.club:8688/static/images/goods.jpg",
+                        "freight_template_id": 17,
+                        "is_on_sale": 1,
+                        "add_time": 1730821544,
+                        "is_fast": 0,
+                        "is_delete": 0,
+                        "weight_count": 4
+                    }
+                ],
+                "cartTotal": {
+                    "goodsCount": 2,
+                    "goodsAmount": "0.40",
+                    "checkedGoodsCount": 2,
+                    "checkedGoodsAmount": "0.40",
+                    "user_id": 5590,
+                    "numberChange": 0
+                }
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/cart/checkout?addressId=0&addType=1&orderFrom=undefined&type=0",
+        "method": "get",
+        "response": {
+            "errno": 0,
+            "errmsg": "",
+            "data": {
+                "checkedAddress": {
+                    "id": 2183,
+                    "name": "张三",
+                    "user_id": 5590,
+                    "country_id": 0,
+                    "province_id": 3,
+                    "city_id": 38,
+                    "district_id": 422,
+                    "address": "行行行",
+                    "mobile": "13097171122",
+                    "is_default": 1,
+                    "is_delete": 0,
+                    "province_name": "天津市",
+                    "city_name": "天津市",
+                    "district_name": "和平区",
+                    "full_region": "天津市天津市和平区"
+                },
+                "freightPrice": 0,
+                "checkedGoodsList": [
+                    {
+                        "id": 22129,
+                        "user_id": 5590,
+                        "goods_id": 1009024,
+                        "goods_sn": "1234",
+                        "product_id": 251,
+                        "goods_name": "日式和风懒人沙发",
+                        "goods_aka": "懒人椅",
+                        "goods_weight": 2,
+                        "add_price": "0.20",
+                        "retail_price": "0.20",
+                        "number": 2,
+                        "goods_specifition_name_value": "蓝色",
+                        "goods_specifition_ids": "77",
+                        "checked": 1,
+                        "list_pic_url": "https://www.qile.club:8688/static/images/goods.jpg",
+                        "freight_template_id": 17,
+                        "is_on_sale": 1,
+                        "add_time": 1730821600,
+                        "is_fast": 1,
+                        "is_delete": 0,
+                        "weight_count": 4
+                    }
+                ],
+                "goodsTotalPrice": "0.40",
+                "orderTotalPrice": "0.40",
+                "actualPrice": "0.40",
+                "goodsCount": 2,
+                "outStock": 0,
+                "numberChange": 0
+            }
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/order/submit",
+        "method": "post",
+        "payload": {
+            "addressId": 2183,
+            "postscript": "休息休息",
+            "freightPrice": 0,
+            "actualPrice": "0.40",
+            "offlinePay": 1
+        },
+        "response": {
+            "addressId": 2183,
+            "postscript": "休息休息",
+            "freightPrice": 0,
+            "actualPrice": "0.40",
+            "offlinePay": 1
+        }
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/settings/userDetail",
+        "method": "get",
+        "response": {"errno":0,"errmsg":"","data":{"id":5590,"mobile":"","name":"","nickname":"微信用户","avatar":"/static/images/default_avatar.png"}}
+    },
+    {
+        "address": "http://119.29.185.251:8360/api/settings/save",
+        "method": "post",
+        "payload": {"name":"休息休息","mobile":"13970717143","nickName":"微信用户","avatar":"/static/images/default_avatar.png"},
+        "response": {"errno":0,"errmsg":"","data":1}
+    }
+]
