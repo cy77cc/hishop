@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Product struct {
-	Id                    uint    `json:"id" gorm:"primary_key;AUTO_INCREMENT"`
+	gorm.Model
 	GoodsId               uint    `json:"goods_id"`
 	GoodsSpecificationIds string  `json:"goods_specification_ids"`
 	GoodsSn               string  `json:"goods_sn"`
@@ -12,5 +14,5 @@ type Product struct {
 	HasChange             int8    `json:"has_change"`
 	GoodsName             string  `json:"goods_name"`
 	IsOnSale              int8    `json:"is_on_sale"`
-	IsDeleted             int8    `json:"is_deleted"`
+	IsDelete              int8    `json:"is_delete"`
 }

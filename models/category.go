@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Category struct {
-	Id         uint   `json:"id" gorm:"primary_key;AUTO_INCREMENT"`
+	gorm.Model
 	Name       string `json:"name" gorm:"varchar(90);default:''"`
 	Keywords   string `json:"keywords" gorm:"varchar(255);default:''"`
 	FrontDesc  string `json:"front_desc" gorm:"varchar(255);default:''"`

@@ -28,7 +28,7 @@ func AppInfo(c *gin.Context) {
 	db.Where("is_delete=?", 0).Find(&notices)
 
 	categoryList := make([]categoryListItem, 0)
-	db.Table("hiolabs_category").
+	db.Model(&models.Category{}).
 		Select("id", "name", "img_url as banner", " p_height as height").
 		Where("parent_id=? and is_show=?", 0, 1).
 		Order("sort_order").
@@ -36,7 +36,7 @@ func AppInfo(c *gin.Context) {
 
 	for k, v := range categoryList {
 		goods := make([]models.Goods, 0)
-		db.Table("hiolabs_goods").Where(map[string]interface{}{
+		db.Model(&models.Goods{}).Where(map[string]interface{}{
 			"category_id": v.Id,
 			"is_on_sale":  1,
 			"is_index":    1,
@@ -51,8 +51,8 @@ func AppInfo(c *gin.Context) {
 	openid := jwt[configs.IdentityKey]
 	var userId int
 	var cartCount int
-	db.Table("hiolabs_user").Where("weixin_openid=?", openid).Select("id").Find(&userId)
-	db.Table("hiolabs_cart").Where("user_id=?", userId).Group("user_id").Select("count(*)").Find(&cartCount)
+	db.Model(&models.User{}).Where("weixin_openid=?", openid).Select("id").Find(&userId)
+	db.Model(&models.Cart{}).Where("user_id=?", userId).Group("user_id").Select("count(*)").Find(&cartCount)
 
 	data := make(map[string]interface{})
 	data["channel"] = channels

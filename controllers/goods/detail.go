@@ -30,7 +30,7 @@ func Detail(c *gin.Context) {
 	for k, v := range value {
 		goodsNumber := 0
 		db.Table("hiolabs_product").
-			Where("goods_specification_ids=?", v.Id).
+			Where("goods_specification_ids=?", v.ID).
 			Select("goods_number").Find(&goodsNumber)
 		value[k].GoodsNumber = goodsNumber
 	}
@@ -45,7 +45,7 @@ func Detail(c *gin.Context) {
 			"gallery": gallery,
 			"product": product,
 			"specificationList": map[string]interface{}{
-				"specification_id": specification.Id,
+				"specification_id": specification.ID,
 				"name":             specification.Name,
 				"valueList":        value,
 			},

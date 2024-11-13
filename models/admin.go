@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Admin struct {
-	Id            int    `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
+	gorm.Model
 	Username      string `json:"username" gorm:"varchar(25);default:''"`
 	Password      string `json:"password" gorm:"varchar(255);default:''"`
 	PasswordSalt  string `json:"password_salt" gorm:"varchar(255);default:''"`

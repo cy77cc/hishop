@@ -23,7 +23,9 @@ func Index(c *gin.Context) {
 	db.Where("is_default=1 and is_show=1").First(&keyword)
 	db.Table("hiolabs_keywords").Where("is_hot=1").Distinct("keyword").First(&hotKeywordList)
 	db.Where("weixin_openid=?", openid).Find(&user)
-	db.Table("hiolabs_search_history").Distinct("keyword").Where("user_id=?", user.Id).Find(&historyKeywordList)
+	db.Table("hiolabs_search_history").
+		Distinct("keyword").
+		Where("user_id=?", user.ID).Find(&historyKeywordList)
 	c.JSON(http.StatusOK, gin.H{
 		"errno":  0,
 		"errmsg": "",

@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Order struct {
-	Id             uint    `gorm:"primary_key;auto_increment" json:"id"`
+	gorm.Model
 	OrderSn        string  `json:"order_sn"`
 	UserId         uint    `json:"user_id"`
 	OrderStatus    uint8   `json:"order_status"`
@@ -39,20 +41,20 @@ type Order struct {
 }
 
 type OrderExpress struct {
-	Id            uint   `gorm:"primary_key;auto_increment" json:"id"`
-	OrderId       uint   `json:"order_id"`
-	ShipperId     uint   `json:"shipper_id"`
-	ShipperName   string `json:"shipper_name"`
-	ShipperCode   string `json:"shipper_code"`
-	LogisticsCode string `json:"logistics_code"`
-	Traces        string `json:"traces"`
-	IsFinish      uint8  `json:"is_finish"`
-	RequestCount  int    `json:"request_count"`
-	RequestTime   int    `json:"request_time"`
-	AddTime       int    `json:"add_time"`
-	UpdateTime    int    `json:"update_time"`
-	ExpressType   uint8  `json:"express_type"`
-	RegionCode    string `json:"region_code"`
+	Id           uint   `gorm:"primary_key;auto_increment" json:"id"`
+	OrderId      uint   `json:"order_id"`
+	ShipperId    uint   `json:"shipper_id"`
+	ShipperName  string `json:"shipper_name"`
+	ShipperCode  string `json:"shipper_code"`
+	LogisticCode string `json:"logistic_code"`
+	Traces       string `json:"traces"`
+	IsFinish     uint8  `json:"is_finish"`
+	RequestCount int    `json:"request_count"`
+	RequestTime  int    `json:"request_time"`
+	AddTime      int    `json:"add_time"`
+	UpdateTime   int    `json:"update_time"`
+	ExpressType  uint8  `json:"express_type"`
+	RegionCode   string `json:"region_code"`
 }
 
 type OrderGoods struct {

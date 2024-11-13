@@ -3,7 +3,6 @@ package middleware
 import (
 	"encoding/json"
 	"errors"
-	"fmt"
 	"github.com/cy77cc/hioshop/configs"
 	"github.com/cy77cc/hioshop/models"
 	"github.com/cy77cc/hioshop/util"
@@ -28,7 +27,7 @@ func GetAuthMiddleware() *jwt.GinJWTMiddleware {
 	return authMiddleware
 }
 
-type WX_code2Session struct {
+type WxCode2session struct {
 	Openid     string `json:"openid"`
 	SessionKey string `json:"session_key"`
 	Unionid    string `json:"unionid"`
@@ -131,7 +130,7 @@ func authenticator() func(c *gin.Context) (interface{}, error) {
 		code := loginVals.Code
 
 		client := resty.New()
-		wxRespone := WX_code2Session{}
+		wxRespone := WxCode2session{}
 		get, err := client.R().
 			SetQueryParams(map[string]string{
 				"appid":      configs.Appid,
@@ -152,26 +151,25 @@ func authenticator() func(c *gin.Context) (interface{}, error) {
 		}
 		db := util.GetDB()
 		user := models.User{}
-		db.Table("hiolabs_user").Where("weixin_openid=?", wxRespone.Openid).First(&user)
-		if db.Error != nil || user.Id == 0 {
-			currentTime := time.Now().Unix() / 1000
-			uuidv1, _ := uuid.NewUUID()
-			db.Table("hiolabs_user").Create(map[string]interface{}{
-				"username":        "微信用户" + uuidv1.String()[:8],
-				"password":        wxRespone.Openid,
-				"register_time":   currentTime,
-				"register_ip":     "",
-				"last_login_time": currentTime,
-				"last_login_ip":   "",
-				"mobile":          "",
-				"weixin_openid":   wxRespone.Openid,
-				"nickname":        "",
-				"avatar":          "/static/images/default_avatar.png",
-			})
-			user.Username = "微信用户" + uuidv1.String()[:8]
-			user.WeixinOpenid = wxRespone.Openid
-			return &user, nil
+		uuidv1, _ := uuid.NewUUID()
+		user.Username = "微信用户" + uuidv1.String()[:8]
+		user.Password = wxRespone.Openid
+		user.RegisterTime = time.Now()
+		user.LastLoginTime = time.Now()
+		user.WeixinOpenid = wxRespone.Openid
+		user.Avatar = "/static/images/default_avatar.png"
+
+		db.Find(&user, "weixin_openid=?", wxRespone.Openid)
+		if user.ID <= 0 {
+			result := db.Create(&user)
+			if result.RowsAffected == 1 {
+				user.Password = ""
+				return &user, nil
+			} else {
+				return nil, jwt.ErrFailedAuthentication
+			}
 		} else {
+			db.Find(&user, "weixin_openid=?", wxRespone.Openid)
 			return &user, nil
 		}
 	}
@@ -180,10 +178,13 @@ func authenticator() func(c *gin.Context) (interface{}, error) {
 func authorizator() func(data interface{}, c *gin.Context) bool {
 	return func(data interface{}, c *gin.Context) bool {
 		v, ok := data.(*models.User)
+		if v.WeixinOpenid == "" {
+			return false
+		}
 		db := util.GetDB()
 		user := models.User{}
-		db.Table("hiolabs_user").Where("weixin_openid=?", v.WeixinOpenid).First(&user)
-		if ok && user.Id != 0 {
+		db.First(&user, "weixin_openid=?", v.WeixinOpenid)
+		if ok && user.ID != 0 {
 			return true
 		}
 		return false
@@ -210,10 +211,9 @@ func handleNoRoute() func(c *gin.Context) {
 func mainHandler(c *gin.Context) {
 	claims := jwt.ExtractClaims(c)
 	openid, _ := claims[configs.IdentityKey].(string)
-	fmt.Println(openid)
 	db := util.GetDB()
 	user := models.User{}
-	db.Table("hiolabs_user").Where("weixin_openid=?", openid).First(&user)
+	db.Where("weixin_openid=?", openid).First(&user)
 
 	c.JSON(200, gin.H{
 		"errno":  0,

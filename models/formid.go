@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Formid struct {
-	Id       int    `json:"id" gorm:"primary_key;AUTO_INCREMENT;type:int"`
+	gorm.Model
 	UserId   int    `json:"user_id" gorm:"type:int"`
 	OrderId  int    `json:"order_id" gorm:"type:int"`
 	FormId   string `json:"form_id" gorm:"type:varchar(255)"`

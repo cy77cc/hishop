@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Address struct {
-	Id         uint   `gorm:"primary_key;AUTO_INCREMENT;type:mediumint" json:"id"`
+	gorm.Model
 	Name       string `gorm:"type:varchar(50);default:''" json:"name"`
 	UserId     uint   `json:"user_id" gorm:"type:mediumint;default:0"`
 	CountryId  int16  `json:"country_id" gorm:"type:smallint;default:0"`

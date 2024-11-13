@@ -27,6 +27,7 @@ func main() {
 	routes.RegisterGoodsRoutes(v1)
 	routes.RegisterIndexRoutes(v1)
 	routes.RegisterCartGroup(v1)
+	routes.RegisterCatalogGroup(v1)
 
 	// start http server
 	if err := http.ListenAndServe(":8080", engine); err != nil {

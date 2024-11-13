@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Ad struct {
-	Id        uint   `json:"id" gorm:"primary_key;auto_increment"`
+	gorm.Model
 	LinkType  uint   `json:"link_type" gorm:"type:tinyint;default:0"`
 	Link      string `json:"link" gorm:"varchar(255);default:''"`
 	GoodsId   int    `json:"goods_id" gorm:"type:int;default:0"`

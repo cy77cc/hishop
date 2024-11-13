@@ -1,7 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Goods struct {
-	Id                uint   `gorm:"primary_key;AUTO_INCREMENT" json:"id"`
+	gorm.Model
 	CategoryId        uint   `json:"category_id" gorm:"default:0"`
 	IsOnSale          uint8  `json:"is_on_sale" gorm:"default:1"`
 	Name              string `json:"name"`
@@ -13,7 +15,7 @@ type Goods struct {
 	CostPrice         string `json:"cost_price"`
 	MinCostPrice      string `json:"min_cost_price"`
 	GoodsBrief        string `json:"goods_brief"`
-	GoodsDesc         string `json:"goods_desc"`
+	GoodsDesc         string `json:"goods_desc" gorm:"type:text"`
 	SortOrder         uint   `json:"sort_order"`
 	IsIndex           int8   `json:"is_index"`
 	IsNew             int8   `json:"is_new"`
@@ -28,7 +30,7 @@ type Goods struct {
 }
 
 type GoodsGallery struct {
-	Id        uint   `json:"id" gorm:"primary_key;AUTO_INCREMENT"`
+	gorm.Model
 	GoodsId   uint   `json:"goods_id"`
 	ImgUrl    string `json:"img_url"`
 	ImgDesc   string `json:"img_desc"`
@@ -37,7 +39,7 @@ type GoodsGallery struct {
 }
 
 type GoodsSpecification struct {
-	Id              uint   `json:"id" gorm:"primary_key;AUTO_INCREMENT"`
+	gorm.Model
 	GoodsId         uint   `json:"goods_id"`
 	SpecificationId uint   `json:"specification_id"`
 	Value           string `json:"value"`
