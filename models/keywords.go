@@ -1,9 +1,7 @@
 package models
 
-import "gorm.io/gorm"
-
 type Keywords struct {
-	gorm.Model
+	Model
 	Keyword   string `json:"keyword" gorm:"type:varchar(90);default:''"`
 	IsHot     uint8  `json:"is_hot" gorm:"type:tinyint unsigned;default:0"`
 	IsDefault uint8  `json:"is_default" gorm:"type:tinyint unsigned;default:0"`

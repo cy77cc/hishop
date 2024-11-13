@@ -1,9 +1,7 @@
 package models
 
-import "gorm.io/gorm"
-
 type Goods struct {
-	gorm.Model
+	Model
 	CategoryId        uint   `json:"category_id" gorm:"default:0"`
 	IsOnSale          uint8  `json:"is_on_sale" gorm:"default:1"`
 	Name              string `json:"name"`
@@ -30,7 +28,7 @@ type Goods struct {
 }
 
 type GoodsGallery struct {
-	gorm.Model
+	Model
 	GoodsId   uint   `json:"goods_id"`
 	ImgUrl    string `json:"img_url"`
 	ImgDesc   string `json:"img_desc"`
@@ -39,7 +37,7 @@ type GoodsGallery struct {
 }
 
 type GoodsSpecification struct {
-	gorm.Model
+	Model
 	GoodsId         uint   `json:"goods_id"`
 	SpecificationId uint   `json:"specification_id"`
 	Value           string `json:"value"`

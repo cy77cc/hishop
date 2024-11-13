@@ -1,9 +1,19 @@
 package models
 
-import "gorm.io/gorm"
+import (
+	"gorm.io/gorm"
+	"time"
+)
+
+type Model struct {
+	ID        uint           `json:"id" gorm:"primarykey"`
+	CreatedAt time.Time      `json:"created_at"`
+	UpdatedAt time.Time      `json:"updated_at"`
+	DeletedAt gorm.DeletedAt `json:"deleted_at" gorm:"index"`
+}
 
 type Ad struct {
-	gorm.Model
+	Model
 	LinkType  uint   `json:"link_type" gorm:"type:tinyint;default:0"`
 	Link      string `json:"link" gorm:"varchar(255);default:''"`
 	GoodsId   int    `json:"goods_id" gorm:"type:int;default:0"`

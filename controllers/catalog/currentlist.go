@@ -23,7 +23,7 @@ func CurrentList(c *gin.Context) {
 	db.Where("category_id=?", req.Id).
 		Order("sort_order").
 		Offset(req.Size * (req.Page - 1)).Limit(req.Size).Find(&goods)
-	db.Table("hiolabs_goods").
+	db.Model(&models.Goods{}).
 		Where("category_id=?", req.Id).
 		Select("count(*) as count").Find(&count)
 	totalPages := int(math.Ceil(float64(count) / float64(req.Size)))

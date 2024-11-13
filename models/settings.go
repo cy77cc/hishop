@@ -1,9 +1,7 @@
 package models
 
-import "gorm.io/gorm"
-
 type Settings struct {
-	gorm.Model
+	Model
 	AutoDelivery       int8   `json:"auto_delivery" gorm:"type:tinyint;default:0"`
 	Name               string `json:"name" gorm:"type:varchar(100)"`
 	Tel                string `json:"tel" gorm:"type:varchar(20)"`

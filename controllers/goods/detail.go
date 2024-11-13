@@ -10,31 +10,33 @@ import (
 
 type Value struct {
 	models.GoodsSpecification
-	GoodsNumber int `json:"goods_number"`
+	GoodsNumber int `json:"goods_number" gorm:"-"`
 }
 
 func Detail(c *gin.Context) {
-	goods_id, _ := strconv.Atoi(c.Query("id"))
+	goodsId, _ := strconv.Atoi(c.Query("id"))
 	db := util.GetDB()
 	info := models.Goods{}
 	gallery := make([]models.GoodsGallery, 0)
 	product := make([]models.Product, 0)
 	specification := models.Specification{}
 	value := make([]Value, 0)
-	db.Where("id=?", goods_id).Find(&info)
-	db.Where("goods_id=?", goods_id).Find(&gallery)
-	db.Where("goods_id=?", goods_id).Find(&product)
-	db.Table("hiolabs_goods_specification").
-		Where("goods_id=? and is_delete=0", goods_id).
+	db.Where("id=?", goodsId).Find(&info)
+	db.Where("goods_id=?", goodsId).Find(&gallery)
+	db.Where("goods_id=?", goodsId).Find(&product)
+
+	db.Model(&models.GoodsSpecification{}).
+		Where("goods_id=? and is_delete=0", goodsId).
 		Find(&value)
+
 	for k, v := range value {
 		goodsNumber := 0
-		db.Table("hiolabs_product").
+		db.Model(&models.Product{}).
 			Where("goods_specification_ids=?", v.ID).
 			Select("goods_number").Find(&goodsNumber)
 		value[k].GoodsNumber = goodsNumber
 	}
-	db.Table("hiolabs_specification").
+	db.Model(&models.Specification{}).
 		Where("id=?", value[0].SpecificationId).
 		Find(&specification)
 	c.JSON(http.StatusOK, gin.H{

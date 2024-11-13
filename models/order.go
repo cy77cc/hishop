@@ -1,9 +1,7 @@
 package models
 
-import "gorm.io/gorm"
-
 type Order struct {
-	gorm.Model
+	Model
 	OrderSn        string  `json:"order_sn"`
 	UserId         uint    `json:"user_id"`
 	OrderStatus    uint8   `json:"order_status"`
@@ -41,7 +39,7 @@ type Order struct {
 }
 
 type OrderExpress struct {
-	Id           uint   `gorm:"primary_key;auto_increment" json:"id"`
+	Model
 	OrderId      uint   `json:"order_id"`
 	ShipperId    uint   `json:"shipper_id"`
 	ShipperName  string `json:"shipper_name"`

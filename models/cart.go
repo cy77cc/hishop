@@ -1,9 +1,7 @@
 package models
 
-import "gorm.io/gorm"
-
 type Cart struct {
-	gorm.Model
+	Model
 	UserId                      uint    `json:"user_id" gorm:"type:mediumint unsigned;default:0"`
 	GoodsId                     uint    `json:"goods_id" gorm:"type:mediumint unsigned;default:0"`
 	GoodsSn                     string  `json:"goods_sn" gorm:"type:varchar(60);default:''"`

@@ -1,9 +1,7 @@
 package models
 
-import "gorm.io/gorm"
-
 type FreightTemplate struct {
-	gorm.Model
+	Model
 	Name         string  `json:"name" gorm:"type:varchar(120);default:'0'"`
 	PackagePrice float32 `json:"package_price" gorm:"type:decimal(10,2) unsigned;default:0.00"`
 	FreightType  int8    `json:"freight_type" gorm:"type:tinyint;default:0"`
@@ -11,7 +9,7 @@ type FreightTemplate struct {
 }
 
 type FreightTemplateDetail struct {
-	gorm.Model
+	Model
 	TemplateId int  `json:"template_id" gorm:"primary_key;type:int;default:0"`
 	GroupId    int  `json:"group_id" gorm:"type:int;default:0"`
 	Area       int  `json:"area" gorm:"type:int;default:0"`
@@ -19,7 +17,7 @@ type FreightTemplateDetail struct {
 }
 
 type FreightTemplateGroup struct {
-	gorm.Model
+	Model
 	TemplateId   int     `json:"template_id" gorm:"type:int;default:0"`
 	IsDefault    int8    `json:"is_default" gorm:"type:tinyint;default:0"`
 	Area         string  `json:"area" gorm:"type:varchar(3000);default:'0'"`

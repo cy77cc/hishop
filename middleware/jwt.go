@@ -58,7 +58,7 @@ func InitParams() *jwt.GinJWTMiddleware {
 
 	return &jwt.GinJWTMiddleware{
 		Realm:       "hioshop",
-		Key:         []byte("zdp483key"),
+		Key:         []byte(configs.SecretKey),
 		Timeout:     time.Hour * 24 * 7,
 		MaxRefresh:  time.Hour * 24 * 7,
 		IdentityKey: configs.IdentityKey,
@@ -79,12 +79,11 @@ func InitParams() *jwt.GinJWTMiddleware {
 
 func loginResponseFunc() func(c *gin.Context, code int, message string, expire time.Time) {
 	return func(c *gin.Context, code int, message string, expire time.Time) {
-		claims := jwt.ExtractClaims(c)
-		openid, _ := claims[configs.IdentityKey].(string)
+		parseJWT, _ := ParseJWT(message, []byte(configs.SecretKey))
 
 		db := util.GetDB()
 		user := models.User{}
-		db.Where("weixin_openid=?", openid).First(&user)
+		db.Where("weixin_openid=?", parseJWT.Openid).First(&user)
 		c.JSON(code, gin.H{
 			"code":   code,
 			"errno":  0,

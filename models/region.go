@@ -1,9 +1,7 @@
 package models
 
-import "gorm.io/gorm"
-
 type Region struct {
-	gorm.Model
+	Model
 	ParentId uint16 `json:"parent_id" gorm:"type:smallint unsigned;default:0"`
 	Name     string `json:"name" gorm:"type:varchar(120);default:''"`
 	Type     int8   `json:"type" gorm:"type:tinyint;default:2"`
